@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Choices } from 'src/app/shared/models/choice-enum';
+import { Choices } from 'app/shared/models/choice-enum';
 
 
 @Component({
