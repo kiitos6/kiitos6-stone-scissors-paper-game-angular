@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Choices } from 'src/app/shared/models/choice-enum';
+
 
 @Component({
   selector: 'app-game',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GameComponent implements OnInit {
 
+  name!: string;
+  choice!: Choices;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  selectChoice(choice: Choices) {
+    
   }
 
 }
