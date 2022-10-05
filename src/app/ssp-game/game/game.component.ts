@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Choices } from 'app/shared/models/choice-enum';
+import { Choices as ChoicesEnum } from 'src/app/shared/models/choice-enum';
+import { SspService } from '../service/ssp.service';
 
 
 @Component({
@@ -10,14 +11,15 @@ import { Choices } from 'app/shared/models/choice-enum';
 export class GameComponent implements OnInit {
 
   name!: string;
-  choice!: Choices;
+  choices = ChoicesEnum;
 
-  constructor() { }
+  constructor(private ssp: SspService) { }
 
   ngOnInit(): void {
   }
 
-  selectChoice(choice: Choices) {
+  userChoice(choice: ChoicesEnum) {
+    console.log(choice);
     
   }
 

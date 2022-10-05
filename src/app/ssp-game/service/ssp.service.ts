@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class SspService {
 
   constructor() { }
+
+  getComputerChoice(): any {
+    //call to backend
+    
+  }
 }
