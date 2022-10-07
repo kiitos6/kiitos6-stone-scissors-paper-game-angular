@@ -11,16 +11,21 @@
 </div>
 
 <div fxLayout="row" fxLayoutAlign="space-around center">
-    <div>
-        <button mat-raised-button (click)="userChoice(choices.stone)"> stone </button>
+    <div >
+        <button mat-raised-button (click)="userChoice(choices.stone)"> 
+            <img src="/assets/{{choices[choices.stone]}}.png" />
+        </button>
+    </div>
+    <div >
+        <button mat-raised-button (click)="userChoice(choices.scissors)"> 
+            <img src="/assets/{{choices[choices.scissors]}}.png" />
+        </button>
 
     </div>
-    <div>
-        <button mat-raised-button (click)="userChoice(choices.scissors)"> scissors </button>
-
-    </div>
-    <div>
-        <button mat-raised-button (click)="userChoice(choices.paper)"> paper </button>
+    <div f>
+        <button mat-raised-button (click)="userChoice(choices.paper)"> 
+            <img src="/assets/{{choices[choices.paper]}}.png" />
+        </button>
 
     </div>
 </div>

@@ -1,11 +1,26 @@
-<p>Hello {{ data.userName }}</p>
+<h2 mat-dialog-title>Hello {{ data.userName }}</h2>
+<mat-dialog-content>
+    <div fxLayout="row" fxLayoutAlign="space-around center" >
+        <div>
+            your choice: {{ choices[data.userChoice] }}
 
-your choice: {{ choices[data.userChoice] }}
+        </div>
+        <div>
+            computer choice: {{choices[computerChoice]}}    
 
-computer choice: {{choices[computerChoice]}}
+        </div>
 
-<div>
-    <button mat-raised-button> Play again </button>
-    <button mat-raised-button> Go to scores </button>
+    </div>
 
-</div>
+</mat-dialog-content>
+<mat-dialog-actions fxLayout="row" fxLayoutAlign="space-around center">
+    <div>
+        <button mat-raised-button mat-dialog-close> Play again </button>
+
+    </div>
+    <div>
+        <button mat-raised-button> Go to scores </button>
+
+    </div>
+    
+</mat-dialog-actions>

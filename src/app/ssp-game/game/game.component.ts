@@ -25,6 +25,8 @@ export class GameComponent implements OnInit {
     console.log(choice);
     this.ssp.getComputerChoice();//send answer to subject so dialog can read it
     this.dialog.open(GameDialogComponent, {
+      height: '50vh',
+      width: '100vh',
       data: {
         userName: this.name,
         userChoice: choice
@@ -32,5 +34,4 @@ export class GameComponent implements OnInit {
     })
     
   }
-
 }
